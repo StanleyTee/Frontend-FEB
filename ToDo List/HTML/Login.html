@@ -3,29 +3,29 @@
 <head>
 	<title>Online Todo List</title>
 	<link rel="stylesheet" href="../CSS/style.css">
-	<script type="text/javascript" src="user.js"></script>
 </head>
 <body>
 	<div id="header">
 	<h2>Online Todo List</h2>
 	<h4><i>Never lose track of the important stuff</i></h4>
 	</div>
-	<form>
+	<form name="login">
 		<h5>E-mail:</h5>
-		<input type="text" name="E-mail" required >
+		<input type="text" name="E-mail" required size="37">
 		<br>
 		<br>
 		<h5>Username</h5>
-		<input type="text" id="username">
+		<input type="text" id="username" required size="37">
 		<br>
 		<br>
 		<h5>Password:</h5>
-		<input type="password" name="Password" maxlength="4"  method="POST" required >
+		<input type="password" name="Password" maxlength="4"  method="POST" required size="37">
 		<br><br><br>
-		<a href="../HTML/main.html"><button type="button" onclick="storeUserName()">Login</button></a>
+		<a href="../HTML/main.html"><button type="button" onclick = "storeUserName()">Login</button></a>
 	</form>
 	<div id="footer">
 	<p>&copy Stans Enterprises</p>
 	</div>
+	<script type="text/javascript" src="../JS/user.js"></script>
 </body>
 </html>

@@ -66,14 +66,46 @@
 		font-size: 17px;
 
 	}
+		h3{
+		font-family: sans-serif;
+		font-size: 20px;
+	}
 
-		#empty-todo{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			font-size: 20px;
+	#todo{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-size: 20px;
+	display: block;
+  	width: 400px;
+	}
 
-		}
+#todo li{
+	list-style-type: none;
+	clear: both;
+	
+}
+
+#todo li label{
+	border:dashed 1px black;
+	padding: 5px;
+}
+
+#todo li label:hover{
+	background-color: black;
+	color: white;
+	transition-property: all;
+	transition-duration: 400ms;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+#empty-todo{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+
+}
 
 		#footer{
 		text-align: center;
@@ -85,7 +117,4 @@
 		color: #fffc;
 	}
 
-	.message{
-		font-family: cursive;
-		font-size: 15px;
-	}
+	

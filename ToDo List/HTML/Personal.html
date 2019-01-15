@@ -11,25 +11,33 @@
 
 	<div id="add-btn">
 		<a href="../HTML/main.html">
-			<button type="button"><img src="../Images/add.png" alt="add"></button>
+			<button type="button" style="cursor:pointer;"><img src="../Images/add.png" alt="add" ></button>
 		</a>
 		
 	</div>
 
 	<ul class="nav">
-		<a href="../HTML/Today.html"><li>Today</li></a>
-		<a href="../HTML/All.html"><li>All</li></a>
-		<a href="../HTML/Personal.html"><li>Personal</li></a>
-		<a href="../HTML/Home.html"><li>Home</li></a>
-		<a href="../HTML/Work.html"><li>Work</li></a>
-		<a href="../HTML/Starred.html"><li>Starred</li></a>
-		<a href="../HTML/Login.html" onclick="alert('Log out successful')"><li>Log out</li></a>
+		<a href="../HTML/Today.html" style="cursor:pointer;"><li>Today</li></a>
+		<a href="../HTML/All.html" style="cursor:pointer;"><li>All</li></a>
+		<a href="../HTML/Personal.html" style="cursor:pointer;"><li>Personal</li></a>
+		<a href="../HTML/Home.html" style="cursor:pointer;"><li>Home</li></a>
+		<a href="../HTML/Work.html" style="cursor:pointer;"><li>Work</li></a>
+		<a href="../HTML/Starred.html" style="cursor:pointer;"><li>Starred</li></a>
+		<a href="../HTML/Login.html" onclick="alert('Log out successful')" style="cursor:pointer;"><li>Log out</li></a>
 	</ul>
 
-	<div id="empty-todo">
-	<h3><i>List is currently empty</i></h3>
-	<h5><i>Click the + sign to add </h5>
-	</div>
+	<div id="todo">
+    <ul id="incomplete-tasks">
+        <li class="editMode"><label>Cloth Shopping</label><br><br><button class="delete">Delete</button></li>
+        <p></p>
+      </ul>
+      
+      <h3>Completed</h3>
+      <hr>
+      <ul id="completed-tasks">
+        <li><label>See the Doctor</label><button class="delete">Delete</button></li>
+      </ul>
+    </div>
 
 	<div id="footer">
 	<p>&copy Stans Enterprises</p>
