@@ -1,37 +1,151 @@
 	body{
-		background-color: #ff5a00;
+		background-image: url(../Images/background.jpg);
 	}
 
+	#first-page{
+		margin-bottom: 30em;
+	}
 	#header{
 		text-align: center;
 		margin: 2px;
 		width: 100%;
 		background-color: #66616180;
 		color: #fffc;
-		padding-top: 7px;
-		padding-bottom: 7px;
+		padding-right: 0.2%;
+		padding-left: 0.1%;
+		padding-top: 15%;
+		padding-bottom: 12%;  
+		overflow: hidden;
+	}
+	::-webkit-scrollbar{
+		display:all;
+		
 	}
 
-	form{
+	.entry{
 		background-color: #fefefee6;
 		border-radius: 5px;
-		padding: 20px;
-		margin-right: 500px;
-		margin-left: 500px;
-		margin-top: 70px;
-		top: 38%;
-		left: 50%;
-		width:20%;
+		padding: 25px 60px;
+		margin: 30% 30%;
+		width:30%;
+		box-shadow: 1px 2px 7px black;
+		animation: ease-in;
+		animation-delay: 700ms;
+		animation-duration: 2s;
+	}
+
+
+	.entry input{
+		margin: 25% 8%;
+		padding: 5%;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-color: black;
+		border-width: 2px;
+		padding-left: 1px;
+		background-color: #fefefe00;
+		display: flex;
+		flex-wrap: wrap;
+
+
+	}
+
+	.entry input:focus-within{
+		border-color: #b043c1;
+	}
+
+	.btn{
+		color: #251f1fe6;
+		padding: 7px;
+		border: 2px solid #b043c1;
+		border-radius: 5px;
+	}
+
+	.btn:hover{
+		color: #b043c1;
+		border: 2px solid #251f1fe6;
+		border-radius: 5px;
+		background: black;
+		transition-delay: 250ms;
+	}
+
+	.btn-one{
+		padding: 9px;
+		margin-left: 15px;
+		margin-right: 15px;
+		text-decoration: none; 
+	}
+
+	.header-btn{
+		margin-top: 10%;
+	}
+
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col{
+	float: left;
+	width: 50%;
+}
+
+@media screen and (max-width: 600px){
+	.col{
+		width: 100%;
+	}
+}
+
+	.nav{
+		background-color: #1a1919;
+		margin-right: 1px;
+		margin-top: 0px;
+		width: 30%;
 		box-shadow: 3px 3px 5px black;
+		padding: 5px 1px;
+		display: block;
 	}
 
-	form h5{
-		font-family: cursive;
-		padding-left: 7px;
+		.nav li{
+		padding-top:35px;
+		padding-bottom: 10px;
+		border-width: 2px;
+		border: solid 1px #e4e4e4cc;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		color: #e4e4e4cc;
+		display: block;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	.nav li a{
+		cursor:pointer;
 	}
 
 
-	form input{
+		#add-btn{
+			width: 5%;
+			height: 40px;
+			margin-left: 85%;
+			display: ruby-base-container;
+			border-radius: 5px;
+			border: 2px solid #e4e4e4cc;
+		}
+		#add-btn img{
+			padding-top: 4px;
+		}
+		.add-todo{
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			font-size: 20px;
+		}
+
+		.add-todo input{
 		border-top: none;
 		border-right: none;
 		border-left: none;
@@ -39,43 +153,61 @@
 		border-width: 2px;
 		padding-left: 2px;
 		background-color: #fefefe00;
+		font-size: 17px;
 
 	}
-	form button{
-		padding: 5px;
-		margin-left: 100px;
-		font-family: fantasy;
-		border-radius: 5px;
+		h3{
+		font-family: sans-serif;
+		font-size: 20px;
 	}
 
-	#footer{
-		text-align: center;
-		margin-top: 160px;
-		margin-bottom: 0px;
-		padding: 3px;
-		width: 100%;
-		background-color: #66616180;
-		color: #fffc;
-	}		
-	@media screen and (max-width: 500px){
-		form{
-		background-color: #fefefee6;
-		border-radius: 5px;
-		padding: 5px;
-		margin-right: 100px;
-		margin-left: 100px;
-		margin-top: 70px;
-		width:50%;
+	#todo{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-size: 20px;
+	display: block;
+  	width: 400px;
 	}
+
+#todo li{
+	list-style-type: none;
+	clear: both;
 	
-		form button{
-		padding: 5px;
-		margin-left: 60px;
-		font-family: fantasy;
-		border-radius: 5px;
-	}	
+}
 
-	}
+#todo li label{
+	border:dashed 1px black;
+	padding: 5px;
+}
+
+#todo li label:hover{
+	background-color: black;
+	color: white;
+	transition-property: all;
+	transition-duration: 400ms;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+#empty-todo{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+}
+
+
+#footer{
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 1px;
+	padding: 20px;
+	width: 97%;
+	background-color: #232121;
+	color: #fffc;
+	position: absolute;
+}		
+	
 
 	
 

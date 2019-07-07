@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online To-Do List</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+		<div id="header">
+			<img src="../Images/notepad.png" alt="notepad">
+			<div id="show-intro" style="display: inline"></div>
+		</div>
+
+	<div id="add-btn">
+		<button type="button">
+		<a href="../HTML/Add.html"><img src="../Images/add.png" alt="add" style="cursor:pointer;"></a>
+		</button>
+	</div>
+
+	<ul class="nav">
+		<a href="../HTML/Today.html"><li>Today</li></a>
+		<a href="../HTML/All.html"><li>All</li></a>
+		<a href="../HTML/Personal.html"><li>Personal</li></a>
+		<a href="../HTML/Home.html"><li>Home</li></a>
+		<a href="../HTML/Work.html"><li>Work</li></a>
+		<a href="../HTML/Starred.html"><li>Starred</li></a>
+		<a href="../HTML/Login.html" onclick="alert('Log out successful')"><li>Log out</li></a>
+	</ul>
+
+	<div class="container col add-todo" >
+		<form name="addForm" >
+			Title:
+			<br>
+			<input type="text" name="title"id="title" onblur="validate(document.getElementById('help'));">
+			<span id="help_text" class="help"></span>
+			<br><br>
+
+			Summary:
+			<br>
+			<textarea cols="20" rows="1"></textarea><br><br>
+
+			Category:
+			<br>
+			<select>
+				<option>Personal</option>
+				<option>Home</option>
+				<option>Work</option>
+			</select><br><br>
+
+			Time:
+			<br>
+			<input type="time" name="time" required><br><br>
+
+			Date:
+			<br>
+			<input type="date" name="date" required>
+			<br><br>
+
+			<input type="submit" value="Add" onclick="alert('Successful')">
+		</form>
+	</div>
+	<script src="../JS/displayUser.js"></script>
+	<div id="footer">
+	<p>&copy Stans Enterprises</p>
+	</div>
+
+</body>
+</html>

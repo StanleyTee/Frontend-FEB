@@ -2,28 +2,29 @@
 <html>
 <head>
 	<title>Online To-Do List</title>
-	<link rel="stylesheet" href="../CSS/style(main).css">
+	<link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-	<div id="header">
-	<img src="../Images/notepad.png" alt="notepad"><h2>Your Online To-do List</h2>
-	</div>
+		<div id="header">
+			<img src="../Images/notepad.png" alt="notepad">
+			<div id="show-intro" style="display: inline"></div>
+		</div>
 
 	<div id="add-btn">
-		<a href="../HTML/main.html">
+		<a href="../HTML/Add.html">
 			<button type="button" style="cursor:pointer;"><img src="../Images/add.png" alt="add" ></button>
 		</a>
 		
 	</div>
 
 	<ul class="nav">
-		<a href="../HTML/Today.html" style="cursor:pointer;"><li>Today</li></a>
-		<a href="../HTML/All.html" style="cursor:pointer;"><li>All</li></a>
-		<a href="../HTML/Personal.html" style="cursor:pointer;"><li>Personal</li></a>
-		<a href="../HTML/Home.html" style="cursor:pointer;"><li>Home</li></a>
-		<a href="../HTML/Work.html" style="cursor:pointer;"><li>Work</li></a>
-		<a href="../HTML/Starred.html" style="cursor:pointer;"><li>Starred</li></a>
-		<a href="../HTML/Login.html" onclick="alert('Log out successful')" style="cursor:pointer;"><li>Log out</li></a>
+		<a href="../HTML/Today.html"><li>Today</li></a>
+		<a href="../HTML/All.html"><li>All</li></a>
+		<a href="../HTML/Personal.html"><li>Personal</li></a>
+		<a href="../HTML/Home.html"><li>Home</li></a>
+		<a href="../HTML/Work.html"><li>Work</li></a>
+		<a href="../HTML/Starred.html"><li>Starred</li></a>
+		<a href="../HTML/Login.html" onclick="alert('Log out successful')"><li>Log out</li></a>
 	</ul>
 
 	<div id="todo">
@@ -42,5 +43,6 @@
 	<div id="footer">
 	<p>&copy Stans Enterprises</p>
 	</div>
+	<script src="../JS/displayUser.js"></script>
 </body>
 </html>
